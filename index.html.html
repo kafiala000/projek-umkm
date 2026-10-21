@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website UMKM Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER DAN NAVIGASI -->
+    <header>
+        <div class="logo">UMKM Maju Jaya</div>
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#profil">Profil</a>
+            <a href="#produk">Produk</a>
+            <a href="#informasi">Informasi</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- 2. BAGIAN BERANDA (HERO SECTION) -->
+    <section id="beranda" class="hero">
+        <h1>Selamat Datang di UMKM Kami</h1>
+        <p>Solusi produk berkualitas tinggi langsung dari produsen lokal pilihan.</p>
+        <a href="#produk" class="btn-pesan">Lihat Produk</a>
+    </section>
+
+    <!-- 3. BAGIAN PROFIL USAHA -->
+    <section id="profil" class="container">
+        <h2>Tentang Usaha Kami</h2>
+        <p><strong>UMKM Maju Jaya</strong> adalah usaha yang bergerak di bidang penyediaan produk berkualitas tinggi langsung dari produsen lokal. Kami berkomitmen untuk memberikan pelayanan terbaik dan terpercaya bagi seluruh pelanggan.</p>
+        
+        <h3>Keunggulan Kami:</h3>
+        <ul>
+            <li>Produk 100% original dan berkualitas pilihan.</li>
+            <li>Pelayanan ramah, cepat, dan terpercaya.</li>
+            <li>Harga bersahabat untuk semua kalangan.</li>
+        </ul>
+    </section>
+
+    <!-- 4. BAGIAN PRODUK ATAU LAYANAN -->
+    <section id="produk" class="container">
+        <h2>Produk Kami</h2>
+        <div class="product-grid">
+            
+            <div class="card">
+                <img src="Nasi Campur Khas Surabaya.jpg" alt="Nasi Campur">
+                <h3>Nasi Campur Khas Surabaya</h3>
+                <p>hidangan nasi putih yang disajikan dengan beragam pilihan lauk-pauk khas Jawa Timur dalam satu piring.</p>
+                <p class="price">Rp 12.000</p>
+            </div>
+
+            <div class="card">
+                <img src="Nasi Rawon.jpg"Nasi Rawon">
+                <h3>Nasi Rawon</h3>
+                <p>kuliner khas Jawa Timur berupa sup daging sapi berkuah hitam pekat dengan cita rasa rempah yang kuat.</p>
+                <p class="price">Rp 15.000</p>
+            </div>
+
+            <div class="card">
+                <img src="Nasi Pecel Khas Madiun2.jpg" alt="Nasi Pecel">
+                <h3>Nasi Pecel Khas Madiun</h3>
+                <p>hidangan tradisional khas Jawa Timur
+                berupa nasi putih yang disajikan dengan aneka sayuran rebus 
+                disiram bumbu kacang kental 
+                dan dinikmati menggunakan alas daun pisang yang disebut pincuk.</p>
+                <p class="price">Rp 10.000</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. BAGIAN TABEL INFORMASI -->
+    <section id="informasi" class="container">
+        <h2>Jadwal Operasional & Layanan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hari</th>
+                    <th>Jam Operasional</th>
+                    <th>Layanan Available</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Senin - Jumat</td>
+                    <td>08.00 - 20.00 WIB</td>
+                    <td>Dine-in, Takeaway, Online</td>
+                </tr>
+                <tr>
+                    <td>Sabtu - Minggu</td>
+                    <td>09.00 - 22.00 WIB</td>
+                    <td>Dine-in & Takeaway</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 6. BAGIAN FORMULIR KONTAK ATAU PEMESANAN -->
+    <section id="kontak" class="container">
+        <h2>Formulir Pemesanan & Kontak</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nama">Nama Pelanggan:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Alamat Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hp">Nomor Telepon/WA:</label>
+                <input type="tel" id="hp" name="hp" required>
+            </div>
+
+            <div class="form-group">
+                <label for="produk-select">Pilih Produk:</label>
+                <select id="produk-select" name="produk">
+                    <option value="produk1">Produk Unggulan 1</option>
+                    <option value="produk2">Produk Unggulan 2</option>
+                    <option value="produk3">Produk Unggulan 3</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="jumlah">Jumlah Pesanan:</label>
+                <input type="number" id="jumlah" name="jumlah" min="1" value="1">
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan atau Catatan:</label>
+                <textarea id="pesan" name="pesan" rows="4"></textarea>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" class="btn">Kirim</button>
+                <button type="reset" class="btn btn-reset">Reset</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer>
+        <p>&copy; 2026 UMKM Maju Jaya | Kontak: 0812-3456-7890 | Instagram: @umkmmajujaya</p>
+    </footer>
+
+</body>
+</html>
